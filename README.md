@@ -1,6 +1,12 @@
 # miditrans
 Code - that will run on a dedicated Raspberry Pi? - to allow me to control an SR18 from a MPKMini
 
+Raison d'être
+----
+I have an [Alesis DM6 drum kit] (http://www.alesis.com/dm6) that has a small set of sounds built-in, but a) I never liked them very much, and b) the "brain" died and the built-in sounds don't work any more. I also have an [Alesis SR18 drum module] (http://www.alesis.com/sr18) that has a much bigger and nicer set of sounds built in, so I wanted to use that instead. One problem is that the notes the DM6 puts out aren't the same as what the SR18 wants (just for a few pads: two toms and one cymbal, IIRC).
+
+I tried using [hydrogen] (http://www.hydrogen-music.org/hcms/) and a desktop PC running [kxStudio](http:kxstudio.linuxaudio.org), but that's a very heavyweight solution. Then I found [mididings](http://das.nasophon.de/mididings/), and realized I could probably run that on a [Raspberry Pi](https://www.raspberrypi.org) quite nicely. And so you have this project, which so far isn't much more than one mididings script, but might evolve to more. We shall see!
+
 
 Notes to myself
 ----
