@@ -3,9 +3,15 @@ Code - that will run on a dedicated Raspberry Pi? - to allow me to control an SR
 
 Raison d'être
 ----
-I have an [Alesis DM6 drum kit] (http://www.alesis.com/dm6) that has a small set of sounds built-in, but a) I never liked them very much, and b) the "brain" died and the built-in sounds don't work any more. I also have an [Alesis SR18 drum module] (http://www.alesis.com/sr18) that has a much bigger and nicer set of sounds built in, so I wanted to use that instead. One problem is that the notes the DM6 puts out aren't the same as what the SR18 wants (just for a few pads: two toms and one cymbal, IIRC).
+I have an [Alesis DM6 drum kit] (http://www.alesis.com/dm6) that has a small set of sounds built-in, but a) I never liked them very much, and b) the "brain" died and the built-in sounds don't work any more. I also have an [Alesis SR18 drum module] (http://www.alesis.com/sr18) that has a much bigger and nicer set of sounds built in, so I wanted to use that instead. One problem is that the notes the DM6 puts out aren't the same as what the SR18 wants (just for a few pads: two toms and one cymbal, IIRC). Another issue is that the DM6 uses USB MIDI, but the SR18 sports "real" 5-pin MIDI connectors, so you can't hook them directly together anyway.
 
-I tried using [hydrogen] (http://www.hydrogen-music.org/hcms/) and a desktop PC running [kxStudio](http:kxstudio.linuxaudio.org), but that's a very heavyweight solution. Then I found [mididings](http://das.nasophon.de/mididings/), and realized I could probably run that on a [Raspberry Pi](https://www.raspberrypi.org) quite nicely. And so you have this project, which so far isn't much more than one mididings script, but might evolve to more. We shall see!
+I tried using [hydrogen] (http://www.hydrogen-music.org/hcms/) and a desktop PC running [kxStudio](http:kxstudio.linuxaudio.org), but that's a very heavyweight solution. Then I found [mididings](http://das.nasophon.de/mididings/), and realized I could probably run that on a [Raspberry Pi](https://www.raspberrypi.org) quite nicely, and use my [Akai MPKmini](http://www.akaipro.com/product/mpk-mini-mkii) as a controller. And so you have this project, which so far isn't much more than one mididings script, but might evolve to more. We shall see!
+
+
+Things I'd like this to be able to do
+----
+1) Change drum kits so I can play the DM6 thru the SR18 (or is it the other way around?).
+2) Can it do more? Like pump MIDI events into my MIDI keyboard, thus using it as a tone generator?
 
 
 Notes to myself
