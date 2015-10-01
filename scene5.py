@@ -15,8 +15,8 @@ from mididings.extra.osc import OSCInterface
 hook(OSCInterface(4011, 4012))
 
 config(
-    in_ports  = [('in_1',  '20:0')],
-    out_ports = [('out_1', '24:0')],
+    in_ports  = [('in_1',  'MPKmini2:0')],
+    out_ports = [('out_1', 'MidiSport 1x1:0')]
 )
 
 
