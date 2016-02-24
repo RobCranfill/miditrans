@@ -1,5 +1,5 @@
 # miditrans
-Code - that will run on a dedicated Raspberry Pi? - to allow me to control an SR18 from a MPKMini
+Code to run on a Raspberry Pi to allow me to control an SR18 from a MPKMini
 
 Raison d'être
 ----
@@ -10,14 +10,14 @@ I tried using [hydrogen] (http://www.hydrogen-music.org/hcms/) and a desktop PC 
 
 Requirements
 ----
-1) [Mididings](http://das.nasophon.de/mididings/)
-
-2) You may need to install ALSA. `aconnect` is certainly useful.
+1) ALSA and other prerequisites weren't included by default in the latest (Jessie) Raspbian:
  * ``sudo apt-get install alsa-base alsa-utils alsa-oss``
  * ``sudo apt-get install libglib2.0-dev``
  * ``sudo apt-get install boost libboost-dev``
- * ``sudo apt-get install jackd``
+ * ``sudo apt-get install jackd libjack-dev``
  * ``sudo apt-get install libasound2 libasound2-dev``
+
+2) [Mididings](http://das.nasophon.de/mididings/)
 
 
 Things I'd like this to be able to do (aka "shortcomings" or "todo")
