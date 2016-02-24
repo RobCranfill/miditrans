@@ -13,7 +13,11 @@ Requirements
 1) [Mididings](http://das.nasophon.de/mididings/)
 
 2) You may need to install ALSA. `aconnect` is certainly useful.
- * ``apt-get install alsa-base alsa-utils``
+ * ``sudo apt-get install alsa-base alsa-utils alsa-oss``
+ * ``sudo apt-get install libglib2.0-dev``
+ * ``sudo apt-get install boost libboost-dev``
+ * ``sudo apt-get install jackd``
+ * ``sudo apt-get install libasound2 libasound2-dev``
 
 
 Things I'd like this to be able to do (aka "shortcomings" or "todo")
