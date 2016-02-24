@@ -13,6 +13,10 @@ Things I'd like this to be able to do
 1) Change drum kits so I can play the DM6 thru the SR18 (or is it the other way around?).
 2) Can it do more? Like pump MIDI events into my MIDI keyboard, thus using it as a tone generator?
 
+Requirements
+----
+You may need to install ALSA. `aconnect` is certainly useful.
+
 
 Notes to myself
 ----
