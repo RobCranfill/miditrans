@@ -8,14 +8,18 @@ I have an [Alesis DM6 drum kit] (http://www.alesis.com/dm6) that has a small set
 I tried using [hydrogen] (http://www.hydrogen-music.org/hcms/) and a desktop PC running [kxStudio](http:kxstudio.linuxaudio.org), but that's a very heavyweight solution. Then I found [mididings](http://das.nasophon.de/mididings/), and realized I could probably run that on a [Raspberry Pi](https://www.raspberrypi.org) quite nicely, and use my [Akai MPKmini](http://www.akaipro.com/product/mpk-mini-mkii) as a controller. And so you have this project, which so far isn't much more than one mididings script, but might evolve to more. We shall see!
 
 
-Things I'd like this to be able to do
+Requirements
+----
+1) [Mididings](http://das.nasophon.de/mididings/)
+
+2) You may need to install ALSA. `aconnect` is certainly useful.
+ * ``apt-get install alsa-base alsa-utils``
+
+
+Things I'd like this to be able to do (aka "shortcomings" or "todo")
 ----
 1) Change drum kits so I can play the DM6 thru the SR18 (or is it the other way around?).
 2) Can it do more? Like pump MIDI events into my MIDI keyboard, thus using it as a tone generator?
-
-Requirements
-----
-You may need to install ALSA. `aconnect` is certainly useful.
 
 
 Notes to myself
