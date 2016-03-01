@@ -10,7 +10,10 @@ I tried using [hydrogen] (http://www.hydrogen-music.org/hcms/) and a desktop PC 
 
 Requirements
 ----
-1) ALSA and other prerequisites weren't included by default in Raspbian:
+1) Enable MidiSport MIDI interface
+ * ``sudo apt-get install midisport-firmware``
+
+2) ALSA and other prerequisites weren't included by default in Raspbian:
  * ``sudo apt-get install alsa-base alsa-utils alsa-oss``
  * ``sudo apt-get install libglib2.0-dev``
  * ``sudo apt-get install libboost-dev libboost-thread-dev libboost-python-dev``
@@ -18,11 +21,11 @@ Requirements
  * ``sudo apt-get install libasound2 libasound2-dev``
  * ``sudo apt-get install python-dev python-decorator``
 
-2) [PyLiblo](http://das.nasophon.de/pyliblo/)
+3) [PyLiblo](http://das.nasophon.de/pyliblo/)
  * CyThon
  * LibLO (http://das.nasophon.de/pyliblo/) ``apt-get install liblo7 liblo-dev python-liblo``
  
-3) [Mididings](http://das.nasophon.de/mididings/)
+4) [Mididings](http://das.nasophon.de/mididings/)
 
 
 Things I'd like this to be able to do (aka "shortcomings" or "todo")
