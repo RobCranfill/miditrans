@@ -22,7 +22,6 @@ Requirements
  * ``sudo apt-get install python-dev python-decorator``
 
 3) [PyLiblo](http://das.nasophon.de/pyliblo/)
- * CyThon
  * LibLO (http://das.nasophon.de/pyliblo/) ``apt-get install liblo7 liblo-dev python-liblo``
  
 4) [Mididings](http://das.nasophon.de/mididings/)
