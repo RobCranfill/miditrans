@@ -16,7 +16,7 @@ Requirements
  * ``sudo apt-get install libboost-dev``
  * ``sudo apt-get install jackd libjack-dev``
  * ``sudo apt-get install libasound2 libasound2-dev``
- * ``sudo apt-get install python-dev``
+ * ``sudo apt-get install python-dev libboost-python-dev``
 
 2) [Mididings](http://das.nasophon.de/mididings/)
 
