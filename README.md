@@ -10,10 +10,10 @@ I tried using [hydrogen] (http://www.hydrogen-music.org/hcms/) and a desktop PC 
 
 Requirements
 ----
-1) ALSA and other prerequisites weren't included by default in the latest (Jessie) Raspbian:
+1) ALSA and other prerequisites weren't included by default in Raspbian:
  * ``sudo apt-get install alsa-base alsa-utils alsa-oss``
  * ``sudo apt-get install libglib2.0-dev``
- * ``sudo apt-get install boost libboost-dev``
+ * ``sudo apt-get install libboost-dev``
  * ``sudo apt-get install jackd libjack-dev``
  * ``sudo apt-get install libasound2 libasound2-dev``
  * ``sudo apt-get install python-dev``
