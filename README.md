@@ -16,9 +16,13 @@ Requirements
  * ``sudo apt-get install libboost-dev libboost-thread-dev libboost-python-dev``
  * ``sudo apt-get install jackd libjack-dev``
  * ``sudo apt-get install libasound2 libasound2-dev``
- * ``sudo apt-get install python-dev``
+ * ``sudo apt-get install python-dev python-decorator``
 
-2) [Mididings](http://das.nasophon.de/mididings/)
+2) [PyLiblo](http://das.nasophon.de/pyliblo/)
+ * CyThon
+ * LibLO (http://das.nasophon.de/pyliblo/) ``apt-get install liblo7 liblo-dev python-liblo``
+ 
+3) [Mididings](http://das.nasophon.de/mididings/)
 
 
 Things I'd like this to be able to do (aka "shortcomings" or "todo")
