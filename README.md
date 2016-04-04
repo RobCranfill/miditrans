@@ -29,7 +29,8 @@ Requirements
 
 Things I'd like this to be able to do (aka "shortcomings" or "todo")
 ----
-1) Change drum kits so I can play the DM6 thru the SR18 (or is it the other way around?).
+1) <strike>Change drum kits so I can play the DM6 thru the SR18 (or is it the other way around?).</strike>  done!
+
 2) Can it do more? Like pump MIDI events into my MIDI keyboard, thus using it as a tone generator?
 
 
