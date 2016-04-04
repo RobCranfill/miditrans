@@ -13,7 +13,7 @@ Requirements
 1) Enable MidiSport MIDI interface
  * ``sudo apt-get install midisport-firmware``
 
-2) ALSA and other prerequisites weren't included by default in Raspbian:
+2) ALSA and other prerequisites weren't included by default in Raspbian. (These are perhaps actually required only by Mididings, later.)
  * ``sudo apt-get install alsa-base alsa-utils alsa-oss``
  * ``sudo apt-get install libglib2.0-dev``
  * ``sudo apt-get install libboost-dev libboost-thread-dev libboost-python-dev``
@@ -25,11 +25,11 @@ Requirements
  * LibLO (http://das.nasophon.de/pyliblo/) ``sudo apt-get install liblo7 liblo-dev python-liblo``
  
 4) [Mididings](http://das.nasophon.de/mididings/)
-
+Install Mididings; this can be problematic on the Raspberry Pi. It worked fine on my PiB+ under Raspbian 7, but not at all on 8.
 
 Things I'd like this to be able to do (aka "shortcomings" or "todo")
 ----
-1) <strike>Change drum kits so I can play the DM6 thru the SR18 (or is it the other way around?).</strike>  done!
+1) (done!) <strike>Change drum kits so I can play the DM6 thru the SR18 (or is it the other way around?).</strike>
 
 2) Can it do more? Like pump MIDI events into my MIDI keyboard, thus using it as a tone generator?
 
