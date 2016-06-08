@@ -25,7 +25,7 @@ Requirements
  * LibLO (http://das.nasophon.de/pyliblo/) ``sudo apt-get install liblo7 liblo-dev python-liblo``
  
 4) [Mididings](http://das.nasophon.de/mididings/)
-Install Mididings; this can be problematic on the Raspberry Pi. It worked fine on my PiB+ under Raspbian 7, but not at all on 8.
+ * Install Mididings; this can be problematic on the Raspberry Pi. It worked fine on my PiB+ under Raspbian 7, but not at all on 8.
 
 Things I'd like this to be able to do (aka "shortcomings" or "todo")
 ----
