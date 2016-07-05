@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # from http://dsacre.github.io/mididings/doc/start.html#anatomy-of-a-mididings-script
 #
 # Uses dictionary of kit names; filters out SYSRT from DM6 in printout.
@@ -15,8 +16,8 @@ from mididings.extra.osc import OSCInterface
 hook(OSCInterface(4011, 4012))
 
 config(
-    in_ports  = [('in_1',  'MPKmini2:0')],
-    out_ports = [('out_1', 'MidiSport 1x1:0')]
+    in_ports  = [('in_1',  'MPKmini2:0'), ('in_2', 'e-drum:0')],
+    out_ports = [('out_1', 'MidiSport 1x1:0'), ('out_2', 'MidiSport 1x1:0')]
 )
 
 
