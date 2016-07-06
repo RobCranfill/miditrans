@@ -1,0 +1,8 @@
+# This is part_2.py
+run(
+  scenes = makeScenes(),
+  control = Filter(PROGRAM) >> SceneSwitch(),
+  pre = ~Filter(PROGRAM),
+  )
+
+# This is the end of part_2.py

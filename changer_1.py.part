@@ -1,0 +1,88 @@
+#!/usr/bin/python
+# This is part_1.py
+
+
+from mididings import *
+
+# from mididings.extra.osc import OSCInterface
+
+# For 'livedings' GUI
+#hook(OSCInterface())
+
+# For 'webdings' GUI
+# hook(OSCInterface(4011, 4012))
+
+config(
+    in_ports  = [('in_1',  'MPKmini2:0') ,     ('in_2',  'e-drum:0')],
+    out_ports = [('out_1', 'MidiSport 1x1:0'), ('out_2', 'MidiSport 1x1:0')]
+)
+
+#  these are 1 more than the listed value?! */
+kits_ = { 
+  'Ambient/debug': 01,
+  'DarkKit01': 13,
+  'ElectTR08': 16,
+  'ElectTR09': 17,
+  'Latin01': 43,
+  'Rock01': 55,
+  'Rock02': 56,
+  'Rock03': 57,
+  'Rock04': 58,
+  'Rock05': 59,
+  'Rock06': 60,
+  'Techno01': 79,
+  'Blues01': 2,
+  'Blues02': 3,
+  'Dance02': 11,
+  'Dance03': 12,
+  'Metal': 47,
+  'NuJack': 48,
+  'World01': 99,
+  'World02': 100
+  };
+
+def makeScenes():
+  s = {}
+  s[1]  = makeSceneWithPrint('Ambient/debug')
+  s[2]  = makeScene('Rock01')
+  s[3]  = makeScene('Rock02')
+  s[4]  = makeScene('Rock03')
+  s[5]  = makeScene('Rock04')
+  s[6]  = makeScene('ElectTR08')
+  s[7]  = makeScene('Techno01')
+  s[8]  = makeScene('Latin01')
+  s[9]  = makeScene('Blues01')
+  s[10] = makeScene('Blues02')
+  s[11] = makeScene('Dance02')
+  s[12] = makeScene('Dance03')
+  s[13] = makeScene('Metal')
+  s[14] = makeScene('NuJack')
+  s[15] = makeScene('World01')
+  s[16] = makeScene('World02')
+  return s
+
+pad_kick      = Key(36);
+pad_snare_1   = Key(38);
+pad_snare_2   = Key(37);
+pad_highhat_1 = Key(42);
+pad_highhat_2 = Key(44);
+pad_highhat_3 = Key(46);
+pad_tom_1     = Key(48);
+pad_tom_2     = Key(47);
+pad_tom_3     = Key(41);
+pad_crash     = Key(49);
+pad_ride      = Key(51);
+pad_bell      = Key(53);
+
+
+def makeScene(name):
+  return Scene(name,[outputKit(name),mapMPKPadsToSR18Pads])
+
+def makeSceneWithPrint(name):
+  return Scene(name,[~Filter(SYSRT_SENSING) >> Print('event: '),outputKit(name),mapMPKPadsToSR18Pads])
+                
+def outputKit(kitName):
+  global kit_
+  return Output('out_1', channel=10, program=(0,kits_[kitName]))
+
+# This is the end of part_1.py
