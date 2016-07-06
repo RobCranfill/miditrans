@@ -27,6 +27,9 @@ Requirements
 4) [Mididings](http://das.nasophon.de/mididings/)
  * Install Mididings; this can be problematic on the Raspberry Pi. It worked fine on my PiB+ under Raspbian 7, but not at all on 8.
 
+5) The MPK must be programmed to output MIDI PC1 (Program Change 1) from pad 1, PC2 from pad 2, etc, for all 8 pads, and for both Bank "A" and "B". That is, PC 1 for pad 1 bank A, thru PC16 for pad 8 bank B.
+
+
 Things I'd like this to be able to do (aka "shortcomings" or "todo")
 ----
 1) (done!) <strike>Change drum kits so I can play the DM6 thru the SR18 (or is it the other way around?).</strike>
